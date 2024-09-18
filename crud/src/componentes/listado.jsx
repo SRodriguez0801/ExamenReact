@@ -125,7 +125,7 @@ export const Listado = () => {
                     <div className='col-md-4 offset-md-4'>
                         <div className='d-grid mx-auto'>
                             <button onClick={() => openModal(1)} className='btn btn-dark btn-sm btn-block' data-bs-toggle='modal' data-bs-target='#modalUsuarios'>
-                                <i className='fa-solid fa-circle-plus' /> Añadir
+                                <i className='fa-solid fa-circle-plus' /> + Añadir
                             </button>
                         </div>
                     </div>
