@@ -5,14 +5,13 @@ import withReactContent from "sweetalert2-react-content";
 import Swal from "sweetalert2";
 import '../Usu.css';
 
-
 export const Listado = () => {
 
     const url = 'https://api.escuelajs.co/api/v1/categories';
     const [usuarios, setUsuarios] = useState([]);
     const [id, setId] = useState('');
-    const [name, setName] = useState('');
-    const [avatar, setAvatar] = useState('');
+    const [name, setName] = useState('');  
+    const [avatar, setAvatar] = useState('');  
     const [titleModal, setTitleModal] = useState('');
     const [operation, setOperation] = useState(1);
 
@@ -30,10 +29,10 @@ export const Listado = () => {
         getUsuarios();
     }, []);
 
-    const openModal = (operation, id, name,  avatar) => {
-        setId(id);
-        setName(name);
-        setAvatar(avatar);
+    const openModal = (operation, id = '', name = '', avatar = '') => {
+        setId(id || '');
+        setName(name || '');
+        setAvatar(avatar || '');
 
         if (operation === 1) {
             setTitleModal('Registrar Usuario');
@@ -204,10 +203,10 @@ export const Listado = () => {
                         </div>
                         <div className='modal-footer'>
                             <span onClick={() => validar()} className='btn badge btn-success'>
-                                <i className='fa-solid fa-save'></i> Keep
+                                <i className='fa-solid fa-save'></i> Guardar
                             </span>
                             <span id='btnCerrarModal' type='button' className='btn badge btn-secondary' data-bs-dismiss='modal'>
-                                Close
+                                Cerrar
                             </span>
                         </div>
                     </div>
