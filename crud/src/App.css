@@ -1,6 +1,18 @@
 .App {
   text-align: center;
+
+  font-family: 'Arial', sans-serif;
+  color: #333; 
+  padding: 20px;
+  background-image: url('.//ceutec.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250vh; /* Ajusta la altura del contenedor para que cubra toda la pantalla */
+  width: auto;   /* Asegura que el fondo cubra el ancho completo */
 }
+
+
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +48,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+

@@ -1,0 +1,33 @@
+.usuarios-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.avatar{
+width: 80px;
+height: 80px;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #050404;
+    border-right: 1px rgb(138, 180, 21);
+    
+}
+
+.table th {
+    background-color: #0f60da;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #cc1111;
+}
+
+
